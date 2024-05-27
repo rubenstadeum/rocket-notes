@@ -1,4 +1,4 @@
-import { Container, Links } from "./styles.js";
+import { Container, Links, Content } from "./styles.js";
 
 import { Header } from "../../components/Header/index.jsx";
 import { Button } from "../../components/Button/index.jsx";
@@ -11,21 +11,35 @@ export function Details() {
     <Container>
       <Header />
 
-      <ButtonText title="Excluir nota" />
+      <main>
+        <Content>
+          <ButtonText title="Excluir nota" />
 
-      <Section title="Links úteis">
-        <Links>
-          <li><a href="#">Instagram</a></li>
-          <li><a href="#">Instagram</a></li>
-        </Links>
-      </Section>
+          <h1>
+            Introdução ao React
+          </h1>
 
-      <Section title="Marcadores">
-        <Tag title="express" />
-        <Tag title="nodejs" />
-      </Section>
+          <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
+            Minus voluptates sit unde aut? Voluptatem, fugit nobis illo ipsam quas,
+             praesentium, nisi facilis animi reiciendis doloremque error quia. Nisi, eos iste.
+          </p>
 
-      <Button title="Voltar" />
+          <Section title="Links úteis">
+            <Links>
+              <li><a href="#">Instagram</a></li>
+              <li><a href="#">Instagram</a></li>
+            </Links>
+          </Section>
+
+          <Section title="Marcadores">
+            <Tag title="express" />
+            <Tag title="nodejs" />
+          </Section>
+
+          <Button title="Voltar" />
+        </Content>
+      </main>
     </Container>
   );
 }
